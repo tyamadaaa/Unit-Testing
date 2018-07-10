@@ -1,6 +1,5 @@
 const functions = require('../functions');
 
-//Testing for the add function
 describe('testing add function', () => {
     test('add 2 positive numbers', () => {
         expect(functions.add(2,2)).toBe(4);
@@ -27,7 +26,6 @@ describe('testing add function', () => {
     });
 });
 
-//Testing for the multiplication function
 describe('testing multiplication function', () => {
     test('Multiply 2 positivews', () => {
         expect(functions.mult(2,4)).toBe(8);
@@ -46,14 +44,12 @@ describe('testing multiplication function', () => {
     });
 });
 
-//Testing createUser function
 describe('testing createUser function', () => {
     test('Should return user name: Mike Wood', () => {
         expect(functions.createUser()).toEqual({ firstName: 'Mike', lastName: 'Wood' });
     });
 });
 
-//Testing fetchUser function 
 describe('testing fetchUser function', () => {
     test('User name should be Leanne Graham', () => {
         expect.assertions(1);
@@ -68,8 +64,8 @@ describe('testing fetchUser function', () => {
         const data = await functions.fetchUser();
         expect(data.name).toEqual('Leanne Graham');
     });
+});
 
-//Testing removeKNames function in various situation
 describe('remove names start with K', () => { 
     test('should remove all K names', () => {
         const names = ['Kathy', 'Katie', 'Steve'];
@@ -89,9 +85,3 @@ describe('remove names start with K', () => {
         expect(functions.removeKNames(names)).not.toContain('kate');
     });
 });
-});
-
-
-
-
-

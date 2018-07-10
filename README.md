@@ -6,10 +6,9 @@
 
 - Jest version 23.2.0
 
-## Set Up
+## Project Set Up
 ```
-$ npm init
-$ npm install --save-dev jest 
+$ npm i
 ```
 
 ## Running the tests
